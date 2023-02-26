@@ -18,11 +18,10 @@ export const ClockFun = () => {
     useEffect(() => {
 
         const timerID = setInterval(() => {
-            setUsuario({
+            setUsuario({...usuario,
                 fecha: new Date(),
                 edad: usuario.edad + 1,
-                nombre: "Martin",
-                apellidos: "San José"
+                
                 })
         }, 1000)
 
